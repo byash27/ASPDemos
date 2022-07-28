@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LMS.Web
+namespace Task1.Web
 {
     public class Startup
     {
@@ -50,15 +50,6 @@ namespace LMS.Web
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-
-                endpoints.MapControllerRoute(
-                    name: "areas",
-                    pattern: "{area}/{controller}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-
             });
         }
     }
